@@ -1,0 +1,367 @@
+@import url("http://fonts.cdnfonts.com/css/international-super-hero");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Island+Moments&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 7;
+  height: 94%;
+  width: 99%;
+  background-color: #114c92;
+}
+
+.esri-elevation-profile.esri-component.esri-widget--panel {
+  width: 350px !important;
+}
+
+h1 {
+  font-family: "International Super Hero", sans-serif;
+  color: #d3af37;
+  margin: 1rem;
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.spidey-logo {
+  display: inline-block;
+}
+
+img {
+  display: inline-block;
+}
+
+.spidey-theme .esri-widget,
+.spidey-theme .esri-widget--button,
+.spidey-theme .esri-menu,
+.spidey-theme .esri-popup__main-container,
+.spidey-theme .esri-popup .esri-popup__pointer-direction,
+.spidey-theme .esri-popup .esri-popup__button,
+.spidey-theme .esri-button,
+.spidey-theme button,
+.spidey-theme .esri-input a {
+  background-color: #b82e3a;
+  color: #d3af37;
+  font-family: "International Super Hero", sans-serif;
+  /* font-family: 'Bangers', cursive; */
+  font-size: 1.5rem;
+}
+
+/* CSS */
+.button-1 {
+  background-color: #b82e3a;
+  /* border-radius: 8px; */
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover {
+  background-color: #7e2128;
+}
+
+.spidey-theme .esri-search__input::-moz-placeholder {
+  color: #d3af37;
+  opacity: 1;
+}
+.spidey-theme .esri-search__input:-ms-input-placeholder {
+  color: #d3af37;
+}
+.spidey-theme .esri-search__input::-webkit-input-placeholder {
+  color: #d3af37;
+}
+
+/* changing original colors */
+
+.esri-widget__anchor {
+  color: #114c92;
+}
+.esri-widget__anchor:hover {
+  color: #d3af37;
+}
+
+.esri-elevation-profile__header button {
+  align-items: center;
+  background-color: #114c92;
+  border: 1px solid #d3af37;
+}
+
+.esri-elevation-profile {
+  height: 6rem;
+}
+
+/* specific adaptations */
+
+a.esri-attribution__link {
+  color: #114c92;
+  background-color: #114c92;
+  font-size: small;
+}
+
+.esri-attribution__sources {
+  color: #114c92;
+  background-color: #114c92;
+}
+
+.esri-attribution__powered-by {
+  color: #114c92;
+  background-color: #114c92;
+  font-size: small;
+}
+
+.esri-attribution--open {
+  color: #114c92;
+  background-color: #114c92;
+}
+
+.esri-interactive {
+  cursor: text;
+}
+
+a.esri-attribution__link:visited a.esri-attribution__link:hover {
+  color: #114c92;
+  background-color: #114c92;
+}
+
+#viewDiv
+  > div.esri-view-root
+  > div.esri-ui.calcite-theme-light
+  > div.esri-ui-inner-container.esri-ui-corner-container
+  > div.esri-ui-top-right.esri-ui-corner
+  > div
+  > div.esri-elevation-profile__main-container
+  > div
+  > div
+  > svg
+  > g
+  > g.amcharts-Container
+  > g:nth-child(2)
+  > g
+  > g.amcharts-Sprite-group.amcharts-Container-group.amcharts-Tooltip-group.amcharts-series-tooltip
+  > g.amcharts-Container.amcharts-Tooltip
+  > g
+  > g
+  > text:nth-child(1)
+  > tspan:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+/* doesnt work!! trying to increase statistics font */
+#viewDiv
+  > div.esri-view-root
+  > div.esri-ui.calcite-theme-light
+  > div.esri-ui-inner-container.esri-ui-corner-container
+  > div.esri-ui-top-right.esri-ui-corner
+  > div
+  > div.esri-elevation-profile-legend
+  > div.esri-elevation-profile-legend-item.esri-elevation-profile-legend-item--expanded
+  > div.esri-elevation-profile-legend-item__content {
+  font-size: 4rem;
+}
+
+.right-header {
+  padding: 10px;
+}
+
+.header-buttons {
+  display: flex;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.header {
+  display: flex;
+}
+
+.modal-container {
+  /* display: none; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  /* opacity: 0;
+  pointer-events: none; */
+  top: 1000vh;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+.modal-container .show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px 50px;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal p {
+  opacity: 0.7;
+}
+
+/* modal creation */
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal2-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #d3af37;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 1rem;
+  color: rgb(70, 70, 70);
+}
+
+.instructions {
+  width: 35%;
+}
+
+.data {
+  width: 70%;
+  max-height: 70%;
+  overflow-y: auto;
+}
+
+/* The Close Button */
+.data_close {
+  color: #d3af37;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+.instructions_close {
+  color: #d3af37;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.data_close:hover,
+.data_close:focus {
+  color: #114c92;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.instructions_close:hover,
+.instructions_close:focus {
+  color: #114c92;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal2-header {
+  padding: 2px 16px;
+  background-color: #7e2128;
+  color: #d3af37;
+  font-family: "International Super Hero", sans-serif;
+  font-size: 1.5rem;
+}
+
+.modal2-body {
+  padding: 2px 16px;
+}
+
+.modal2-footer {
+  padding: 2px 16px;
+  background-color: #7e2128;
+  color: #d3af37;
+  font-family: "International Super Hero", sans-serif;
+  font-size: 1rem;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

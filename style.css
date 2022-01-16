@@ -21,7 +21,7 @@ body,
 }
 
 h1 {
-  font-family: "International Super Hero", sans-serif;
+  font-family: "International Super Hero Out", sans-serif;
   color: #d3af37;
   margin: 1rem;
   display: inline-block;
@@ -47,7 +47,7 @@ img {
 .spidey-theme .esri-input a {
   background-color: #b82e3a;
   color: #d3af37;
-  font-family: "International Super Hero", sans-serif;
+  font-family: "International Super Hero Out", sans-serif;
   /* font-family: 'Bangers', cursive; */
   font-size: 1.5rem;
 }
@@ -309,7 +309,7 @@ a.esri-attribution__link:visited a.esri-attribution__link:hover {
   padding: 2px 16px;
   background-color: #7e2128;
   color: #d3af37;
-  font-family: "International Super Hero", sans-serif;
+  font-family: "International Super Hero Out", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -321,7 +321,7 @@ a.esri-attribution__link:visited a.esri-attribution__link:hover {
   padding: 2px 16px;
   background-color: #7e2128;
   color: #d3af37;
-  font-family: "International Super Hero", sans-serif;
+  font-family: "International Super Hero Out", sans-serif;
   font-size: 1rem;
 }
 
